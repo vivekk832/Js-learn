@@ -34,3 +34,36 @@ console.log(typeof myFunction ); //function
 console.log(typeof obj);// object 
 console.log(typeof heros);// object 
 
+//http://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+/*******************************************************************************************************/
+
+//Stack (Primitive), Heap(Non-Primitive)
+
+let myYoutubeName = "vivekkale"
+
+let anotherName = myYoutubeName
+anotherName = "ChaiAurCode"
+console.log(myYoutubeName);//vivekkale
+console.log(anotherName);//ChaiAurCode
+
+
+let userOne={
+    email:"vivekkale018@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+console.log(userOne === userTwo);//true
+userTwo.email = "vivek@gmail.com"
+
+console.log(userOne.email);//vivek@gmail.com
+console.log(userTwo.email);//vivek@gmail.com
+
+
+
+
+
+
